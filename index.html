@@ -1,88 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OWaltonArt</title>
-    <link rel="stylesheet" href="styles/styles">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OWaltonArt Page</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <header>
-        <a href="logo_link">
-            <img src="webimages/purplerose.png" alt="Logo">
-        </a>
-        <nav>
-         <a href="index.html">Home</a>
-         <a href="">Resume</a>
-         <a href="">Through The Ages</a>
-        </nav>
-    </header>
-    <div class="slideshow-container">
+  <header>
+    <nav>
+      <a id="logo" href="index.html">
+        <img src="webimages/purplerose.png" alt="Logo">
+      </a>
 
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="webimages/rsz_tangled.jpg" style="width:100%">
-          <div class="text">Painted Parkinglot</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="webimages/rsz_2wings.jpg" style="width:100%">
-          <div class="text">Multi-medium Wings</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="webimages/rsz_3timpanogas.jpg" style="width:100%">
-          <div class="text">Mount Timpanogas</div>
-        </div>
-        
+      
+        <a href="index.html">Home</a>
+        <a href="">Resume</a>
+        <a href="">Through The Ages</a>
+      </nav>
+  </header>
+  <div class="slideshow">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="webimages/rsz_tangled.jpg" style="width:100%">
+        <div class="text">Painted Parkinglot</div>
+      </div> 
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="webimages/rsz_2wings.jpg" style="width:100%">
+        <div class="text">Multi-medium Wings</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="webimages/rsz_3timpanogas.jpg" style="width:100%">
+        <div class="text">Mount Timpanogas</div>
+     </div>
+     <div>
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
             
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
             
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
             
-            function showSlides(n) {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-            }
-            </script>
-    </div>
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+      </script>
+      </div>
+  </div>
     <div class="aboutme">
         <img class="me" src="webimages/aboutme-pic.png" alt="Olivia Walton">
         <p>Olivia Walton is a young artist who loves to experiment in any medium. Right now she is working through college, figuring out her major, and trying to grow her skills in art through the classes they provide. She has tried everything ranging from watercolors and oil paints to sewing, metalwork and jewelry, spray painting, and digital artwork and wants to investigate even more mediums. Art has helped her understand the world and by using all these different mediums she tells stories to help her connect to those around her, and the world the way she sees it.</p>
     </div>
-    
 </body>
 
 <footer>
