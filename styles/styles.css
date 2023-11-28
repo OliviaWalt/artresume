@@ -1,8 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Tilt+Neon&display=swap');
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -22,7 +21,7 @@ nav {
   display: flex;
   justify-content: space-around;
   background-color: #3d0171;
-
+  font-family: "Tilt Neon", "IM Fell French Canon SC";
 }
 nav a {
   text-align: center;
@@ -37,6 +36,7 @@ nav a:hover{
 body{
   background-color: white;
 }
+
 /*This is the slideshow code*/
 .slideshow{
 }
@@ -132,6 +132,7 @@ body{
   padding: 30px;
   grid-column: 4/6;
   grid-row: 2/4;
+  font-family: "Indie Flower", "Lato", Helvetica, sans-serif;;
 }
 
 
