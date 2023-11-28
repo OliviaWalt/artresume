@@ -31,6 +31,11 @@ nav a {
 nav a:hover{
   color: #e5b0ff;
 }
+h1{
+  text-align: center;
+  font-size: 3em;
+  font-family: "Tilt Neon", "IM Fell French Canon SC";
+}
 
 
 body{
@@ -128,7 +133,7 @@ body{
 }
 .aboutme p{
   color: #3d0171;
-  font-size: 1.5em;
+  font-size: 1.215em;
   padding: 30px;
   grid-column: 4/6;
   grid-row: 2/4;
