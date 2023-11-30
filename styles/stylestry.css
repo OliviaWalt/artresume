@@ -1,5 +1,5 @@
 /* trying to fix ther grid to be the way I origninally planned*/
-
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Tilt+Neon&display=swap');
 *{
     font-size: 20px;
   }
@@ -36,51 +36,82 @@ body{
     padding: 0;
 }
 
+.resumeh {
+    font-family: "Tilt Neon", "IM Fell French Canon SC";
+}
+
 /* This is my try at the fixed grid*/
 .resume {
     display: grid;
     grid-template-rows: 150px 150px 50px 150px 150px 50px 150px 150px;
-
+    margin: 50px;
+}
+.resume hr {
+    display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  color: black;
+  width: 100%;
+  background-color: black;
+  height: 2px;
 }
 .acrylic {
     grid-row: 1/3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: 20px;
 }
 .acrylicimg{
    max-width: 400px;
     max-height: 300px;
     grid-column: 1/2;
+    border: solid black 3px;
 }
 .acrylic p{
     grid-column: 2/4;
+    font-size: 1.25em;
+    font-family: "Indie Flower", "Lato", Helvetica, sans-serif;
 }
 .digital{
     grid-row: 4/6;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 5px;
 }
 .digitalimg{
     max-width: 400px;
     max-height: 300px;
     grid-column: 3/4;
+    justify-self: right;
+    border: solid black 3px;
 }
 .digitalp{
     grid-column: 1/3;
     grid-row: 1/3;
+    font-size: 1.25em;
+    font-family: "Indie Flower", "Lato", Helvetica, sans-serif;
 }
 .oil{
     grid-row: 7/9;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px;
 }
 .oilimg{
     max-width: 400px;
     max-height: 300px;
     grid-column: 1/2;
+    border: solid black 3px;
 }
 .oil p{
     grid-column: 2/4;
+    font-size: 1.25em;
+    font-family: "Indie Flower", "Lato", Helvetica, sans-serif;
 }
 
 
