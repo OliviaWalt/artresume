@@ -67,6 +67,7 @@ body{
 }
 .digitalp{
     grid-column: 1/3;
+    grid-row: 1/3;
 }
 .oil{
     grid-row: 7/9;
