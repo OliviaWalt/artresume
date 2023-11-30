@@ -231,6 +231,7 @@ footer .social img{
 .page {
   align-content: center;
   text-align: center;
+  margin: 20px;
 }
 .page img{
   max-width: 400px;
@@ -238,7 +239,7 @@ footer .social img{
   max-height: 400px;
   
 }
-.page img
+
 
 
 @media only screen and (max-width: 300px) {
