@@ -39,7 +39,10 @@ h1{
 
 body{
   background-color: white;
+  margin: 0;
+  padding: 0;
 }
+
 
 /*This is the slideshow code*/
 .slideshow{

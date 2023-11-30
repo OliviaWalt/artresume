@@ -31,10 +31,15 @@
     font-family: "Tilt Neon", "IM Fell French Canon SC";
   }
 
-/* This is ,y try at the fixed grid*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* This is my try at the fixed grid*/
 .resume {
     display: grid;
-    grid-template-rows: 200px 200px 50px 200px 200px 50px 200px 200px;
+    grid-template-rows: 150px 150px 50px 150px 150px 50px 150px 150px;
 
 }
 .acrylic {
@@ -43,7 +48,8 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 .acrylicimg{
-    width: 100%;
+   max-width: 400px;
+    max-height: 300px;
     grid-column: 1/2;
 }
 .acrylic p{
@@ -55,7 +61,8 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 .digitalimg{
-    width: 100%;
+    max-width: 400px;
+    max-height: 300px;
     grid-column: 3/4;
 }
 .digital p{
@@ -67,12 +74,15 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 .oilimg{
-    width: 100%;
+    max-width: 400px;
+    max-height: 300px;
     grid-column: 1/2;
 }
 .oil p{
     grid-column: 2/4;
 }
+
+
 
 
 
